@@ -2,6 +2,19 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 
+# Gems for testing and development
+#  gem 'ruby-debug19', :require => 'ruby-debug', :group => [:development, :test]
+
+# Unit and Integration Testing
+  gem 'cucumber-rails', :group => [:development, :test]
+  gem 'rspec-rails', '2.8.1', :group => [:development, :test]
+  gem 'guard-rspec', '0.5.5', :group => [:development, :test]
+  gem 'rb-fsevent', '0.4.3.1', :require => false, :group => [:development, :test]
+  gem 'growl', '1.0.3', :group => [:development, :test]
+  gem 'guard-spork', '0.3.2', :group => [:development, :test]
+  gem 'spork', '0.9.0', :group => [:development, :test]
+  gem 'database_cleaner', :group => [:development, :test]
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -33,12 +46,3 @@ gem 'jquery-rails'
 
 # Deploy with Capistrano
 # gem 'capistrano'
-
-# Gems for testing and development
-group :devtest do
-# To use debugger
- gem 'ruby-debug19', :require => 'ruby-debug'
-
-# Unit and Integration Testing
- gem 'cucumber-rails'
-end
