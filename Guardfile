@@ -1,7 +1,7 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-guard 'rspec', :version => 2, :all_after_pass => false do
+guard 'rspec', :version => 2, :cli => "--drb", :all_after_pass => false do
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
   watch('spec/spec_helper.rb')  { "spec" }
@@ -20,7 +20,7 @@ guard 'rspec', :version => 2, :all_after_pass => false do
   watch(%r{^app/views/(.+)/.*\.(erb|haml)$})          { |m| "spec/requests/#{m[1]}_spec.rb" }
 end
 
-guard 'spork' do
+guard 'spork', :test_unit => false  do
   watch('config/application.rb')
   watch('config/environment.rb')
   watch(%r{^config/environments/.*\.rb$})
