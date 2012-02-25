@@ -69,6 +69,9 @@ GEM
     guard (1.0.0)
       ffi (>= 0.5.0)
       thor (~> 0.14.6)
+    guard-cucumber (0.7.5)
+      cucumber (>= 0.10)
+      guard (>= 0.8.3)
     guard-rspec (0.5.5)
       guard (>= 0.8.4)
     guard-spork (0.3.2)
@@ -168,6 +171,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   growl (= 1.0.3)
+  guard-cucumber
   guard-rspec (= 0.5.5)
   guard-spork (= 0.3.2)
   jquery-rails
