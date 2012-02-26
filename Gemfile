@@ -15,6 +15,10 @@ gem 'rails', '3.2.1'
   gem 'guard-spork', '0.3.2', :group => [:development, :test]
   gem 'spork', '0.9.0', :group => [:development, :test]
   gem 'database_cleaner', :group => [:development, :test]
+  gem 'guard-bundler', :group => [:development, :test]
+  gem 'guard-pow', :group => [:development, :test]
+
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
