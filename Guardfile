@@ -26,6 +26,10 @@ guard 'spork', :test_unit => false  do
   watch(%r{^config/environments/.*\.rb$})
   watch(%r{^config/initializers/.*\.rb$})
   watch('spec/spec_helper.rb')
+  watch('Gemfile')
+  watch('Gemfile.lock')
+  watch('spec/spec_helper.rb')
+  watch('test/test_helper.rb')
 end
 
 guard 'cucumber', :cli => '--drb --format progress --no-profile' do
