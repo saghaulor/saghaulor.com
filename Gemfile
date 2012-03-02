@@ -15,7 +15,6 @@ gem 'tzinfo'
   gem 'guard-cucumber', :group => [:development, :test]
   gem 'rspec-rails', '2.8.1', :group => [:development, :test]
   gem 'guard-rspec', '0.5.5', :group => [:development, :test]
-  gem 'rb-fsevent', '0.4.3.1', :require => false, :group => [:development, :test]
   gem 'growl', '1.0.3', :group => [:development, :test]
   gem 'guard-spork', '0.3.2', :group => [:development, :test]
   gem 'spork', '0.9.0', :group => [:development, :test]
