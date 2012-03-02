@@ -1,5 +1,9 @@
+Given /^I am at \/blog$/ do
+  visit('/blog')
+end
+
 Given /^I am logged in$/ do
-    pending # express the regexp above with the code you wish you had
+  @user.logged_in? == true
 end
 
 When /^I click the create post button$/ do
