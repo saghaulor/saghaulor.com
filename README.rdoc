@@ -28,11 +28,13 @@
 
 2. bundle --binstubs=./bundler_stubs
 
-3. bundle exec guard ## Start running guard so that your environment is automated
+3. Install growlnotify # http://growl.info/downloads#generaldownloads
 
-3. ls -s ~/your_project_dir/your_project_name ## From inside ~/.pow/
+4. bundle exec guard ## Start running guard so that your environment is automated
 
-4. open http://your_project_name.dev ## Opens the browser to your app
+5. ls -s ~/your_project_dir/your_project_name ## From inside ~/.pow/
+
+6. open http://your_project_name.dev ## Opens the browser to your app
 
 == Notes
 
