@@ -22,6 +22,7 @@ gem 'tzinfo'
   gem 'database_cleaner', :group => [:development, :test]
   gem 'guard-bundler', :group => [:development, :test]
   gem 'guard-pow', :group => [:development, :test]
+  gem 'capybara', :group => [:development, :test]
 
 
 
