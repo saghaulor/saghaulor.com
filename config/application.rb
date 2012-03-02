@@ -63,7 +63,7 @@ module SaghaulorCom
         g.fixture_replacement :factory_girl, :dir => 'spec/factories'
         g.orm :couch_potato
         g.stylesheet_engine :sass
-        g.integration_tool :cucumber
+        g.integration_tool :rspec
     end
   end
 end
