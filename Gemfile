@@ -12,6 +12,7 @@ gem 'tzinfo'
 
 # Unit and Integration Testing
   gem 'cucumber-rails', :group => [:development, :test]
+  gem 'rb-fsevent', '0.4.3.1', :require => false, :group => [:development, :test]
   gem 'guard-cucumber', :group => [:development, :test]
   gem 'rspec-rails', '2.8.1', :group => [:development, :test]
   gem 'guard-rspec', '0.5.5', :group => [:development, :test]
