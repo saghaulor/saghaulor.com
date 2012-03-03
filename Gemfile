@@ -6,6 +6,7 @@ gem 'actionpack'
 gem 'actionmailer'
 gem 'activemodel'
 gem 'tzinfo'
+gem 'slim'
 
 # Gems for testing and development
 #  gem 'ruby-debug19', :require => 'ruby-debug', :group => [:development, :test]
