@@ -11,7 +11,8 @@ gem 'tzinfo'
 #  gem 'ruby-debug19', :require => 'ruby-debug', :group => [:development, :test]
 
 # Unit and Integration Testing
-group :development, :test do gem 'cucumber-rails'
+group :development, :test do
+  gem 'cucumber-rails'
   gem 'rb-fsevent', '0.4.3.1'
   gem 'guard-cucumber'
   gem 'rspec-rails', '2.8.1'
