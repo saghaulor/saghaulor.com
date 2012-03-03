@@ -1,5 +1,17 @@
 SaghaulorCom::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
+    config.middleware.insert_before(Rack::Lock, Rack::LiveReload)
+
+      # ...or, change some options...
+
+    config.middleware.insert_before(
+      Rack::Lock, Rack::LiveReload,
+      :min_delay => 500,
+      :max_delay => 10000,
+      :port => 56789,
+      :host => 'http://saghaulor.com.dev'
+      :ignore => [ %r{dont/modify\.html$} ]
+    )
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
