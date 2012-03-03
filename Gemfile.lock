@@ -1,3 +1,13 @@
+PATH
+  remote: /Users/stephenaghaulor/.rvm/gems/ruby-1.9.3-p125/gems/linecache19-0.5.13
+  specs:
+    linecache19 (0.5.13)
+
+PATH
+  remote: /Users/stephenaghaulor/.rvm/gems/ruby-1.9.3-p125/gems/ruby-debug-base19-0.11.26
+  specs:
+    ruby-debug-base19 (0.11.26)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -39,6 +49,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.2.0)
+    columnize (0.3.6)
     couch_potato (0.6.0)
       activemodel
       couchrest (>= 1.0.1)
@@ -141,6 +152,10 @@ GEM
       activesupport (>= 3.0)
       railties (>= 3.0)
       rspec (~> 2.8.0)
+    ruby-debug19 (0.11.6)
+      columnize (>= 0.3.1)
+      linecache19 (>= 0.5.11)
+      ruby-debug-base19 (>= 0.11.19)
     rubyzip (0.9.6.1)
     sass (3.1.15)
     sass-rails (3.2.4)
@@ -195,10 +210,13 @@ DEPENDENCIES
   guard-rspec (= 0.5.5)
   guard-spork (= 0.3.2)
   jquery-rails
+  linecache19 (= 0.5.13)!
   rack-livereload
   railties
   rb-fsevent (= 0.4.3.1)
   rspec-rails (= 2.8.1)
+  ruby-debug-base19 (= 0.11.26)!
+  ruby-debug19
   sass-rails (~> 3.2.3)
   slim
   spork (= 0.9.0)
