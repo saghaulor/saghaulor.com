@@ -9,7 +9,7 @@ SaghaulorCom::Application.configure do
       :min_delay => 500,
       :max_delay => 10000,
       :port => 56789,
-      :host => 'http://saghaulor.com.dev'
+      :host => 'http://saghaulor.com.dev',
       :ignore => [ %r{dont/modify\.html$} ]
     )
 
