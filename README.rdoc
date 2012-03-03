@@ -20,6 +20,8 @@
 
 9. This app uses Rspec and Cucumber as its test frameworks.
 
+10. This app uses slim for view templating.
+
 == Getting Started
 
 0. $ curl get.pow.cx | sh ## Install the pow server
@@ -35,6 +37,8 @@
 4. open http://your_project_name.dev ## Opens the browser to your app
 
 == Notes
+
+0. When using rvm with zsh, load rvm via .zshenv. Otherwise pow will use system Ruby and other juju will occur.
 
 0. JavaScript still requires implementation. Jasmine will be used for the JS test framework.
 
