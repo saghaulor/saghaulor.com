@@ -11,18 +11,22 @@ gem 'tzinfo'
 #  gem 'ruby-debug19', :require => 'ruby-debug', :group => [:development, :test]
 
 # Unit and Integration Testing
-  gem 'cucumber-rails', :group => [:development, :test]
-  gem 'guard-cucumber', :group => [:development, :test]
-  gem 'rspec-rails', '2.8.1', :group => [:development, :test]
-  gem 'guard-rspec', '0.5.5', :group => [:development, :test]
-  gem 'rb-fsevent', '0.4.3.1', :require => false, :group => [:development, :test]
-  gem 'growl', '1.0.3', :group => [:development, :test]
-  gem 'guard-spork', '0.3.2', :group => [:development, :test]
-  gem 'spork', '0.9.0', :group => [:development, :test]
-  gem 'database_cleaner', :group => [:development, :test]
-  gem 'guard-bundler', :group => [:development, :test]
-  gem 'guard-pow', :group => [:development, :test]
-
+group :development, :test do
+  gem 'cucumber-rails'
+  gem 'rb-fsevent', '0.4.3.1'
+  gem 'guard-cucumber'
+  gem 'rspec-rails', '2.8.1'
+  gem 'guard-rspec', '0.5.5'
+  gem 'growl', '1.0.3'
+  gem 'guard-spork', '0.3.2'
+  gem 'spork', '0.9.0'
+  gem 'database_cleaner'
+  gem 'guard-bundler'
+  gem 'guard-pow'
+  gem 'capybara'
+  gem 'guard-livereload'
+  gem 'rack-livereload'
+end
 
 
 # Bundle edge Rails instead:
