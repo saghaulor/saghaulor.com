@@ -1,5 +1,5 @@
 Given /^I am at \/blog$/ do
-  visit('/blog')
+  get('/blog')
 end
 
 Given /^I am logged in$/ do
