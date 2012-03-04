@@ -16,6 +16,9 @@ Spork.prefork do
   require 'capybara/rails'
   require 'capybara/rspec'
 
+  Capybara.app_host = 'http://saghaulor.dev'
+  Capybara.server_port = '20560'
+
   # Requires supporting ruby files with custom matchers and macros, etc,
   # in spec/support/ and its subdirectories.
   Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
