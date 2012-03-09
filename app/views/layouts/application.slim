@@ -7,4 +7,12 @@ html
     = csrf_meta_tags
 
   body
+    nav
+      ul id="navbar"
+        li id="home": a href="/blog" Blog
+        li: a href="/about" man Stephen
+        li: a href="/resume" Resume
+        li: a href="/portfolio" Selected Works
+        li: a href="/wishlist" Wishlists
+
     = yield
