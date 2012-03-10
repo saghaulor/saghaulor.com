@@ -1,5 +1,7 @@
 SaghaulorCom::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
+  Slim::Engine.set_default_options :pretty => true
+
     config.middleware.insert_before(Rack::Lock, Rack::LiveReload)
 
       # ...or, change some options...

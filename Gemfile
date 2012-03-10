@@ -6,6 +6,7 @@ gem 'actionpack'
 gem 'actionmailer'
 gem 'activemodel'
 gem 'tzinfo'
+gem 'slim'
 
 # Gems for testing and development
 #  gem 'ruby-debug19', :require => 'ruby-debug', :group => [:development, :test]
@@ -26,6 +27,9 @@ group :development, :test do
   gem 'capybara'
   gem 'guard-livereload'
   gem 'rack-livereload'
+  gem 'factory_girl_rails'
+  gem 'forgery'
+  gem 'shoulda-matchers'
 end
 
 
