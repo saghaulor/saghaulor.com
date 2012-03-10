@@ -29,6 +29,9 @@ group :development, :test do
   gem 'capybara'
   gem 'guard-livereload'
   gem 'rack-livereload'
+  gem 'factory_girl_rails'
+  gem 'forgery'
+  gem 'shoulda-matchers'
 end
 
 # Bundle edge Rails instead:

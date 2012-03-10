@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'spork'
 require 'capybara/rails'
+require 'factory_girl/step_definitions'
+
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
 
@@ -8,7 +10,6 @@ Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However,
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
-  require 'capybara/rails'
 end
 
 Spork.each_run do
