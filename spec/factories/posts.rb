@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :post do
-    title nil
+    title Forgery(:lorem_ipsum).words(5)
     body Forgery(:lorem_ipsum).words(10)
-    tag nil
+    tags nil
   end
 end
