@@ -15,6 +15,7 @@ Spork.prefork do
   require 'rspec/autorun'
   require 'capybara/rails'
   require 'capybara/rspec'
+  require 'rails/mongoid'
 
   Capybara.app_host = 'http://saghaulor.dev'
   Capybara.server_port = '20560'
@@ -49,6 +50,7 @@ Spork.prefork do
 end
 
 Spork.each_run do
+  DatabaseCleaner.clean
   # This code will be run each time you run your specs.
 
 end
