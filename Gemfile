@@ -39,8 +39,8 @@ end
 
 # Database adapters
 #gem 'sqlite3'
-#gem 'couchbase', '1.0.0'
-gem "couch_potato"
+gem "mongoid", :git => 'git://github.com/mongoid/mongoid.git' #"~> 2.4"
+gem "bson_ext", "1.6.1"
 
 # Gems used only for assets and not required
 # in production environments by default.
