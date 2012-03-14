@@ -1,13 +1,11 @@
 class Post
-  include CouchPotato::Persistence
 
-  property :title
-  property :body
-  property :tags
+  include Mongoid::Document
 
   validates_presence_of :title, :body
 
-  def save!
-    CouchPotato.database.save_document
-  end
+  field :title, type: String
+  field :body, type: String
+  field :tags, type: String
+
 end
