@@ -2,18 +2,27 @@ require 'rubygems'
 require 'spork'
 require 'capybara/rails'
 require 'factory_girl/step_definitions'
+require 'cucumber/rails'
 
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
 
 Spork.prefork do
+  World(Factory::Syntax::Methods) ## Required for FactoryGirl 3 syntax
   # Loading more in this block will cause your tests to run faster. However,
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
 end
 
 Spork.each_run do
-  # This code will be run each time you run your specs.
+  begin
+    DatabaseCleaner[:mongoid].strategy = :truncation
+    Before { DatabaseCleaner.clean }
+  rescue NameError
+    raise "You need to add database_cleaner to your Gemfile (in the :test group) if you wish to use it."
+  end
+
+ # This code will be run each time you run your specs.
 
 end
 
@@ -55,7 +64,6 @@ end
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
 
-require 'cucumber/rails'
 
 # Capybara defaults to XPath selectors rather than Webrat's default of CSS3. In
 # order to ease the transition to Capybara we set the default here. If you'd
@@ -82,13 +90,6 @@ ActionController::Base.allow_rescue = false
 
 # Remove/comment out the lines below if your app doesn't have a database.
 # For some databases (like MongoDB and CouchDB) you may need to use :truncation instead.
-begin
-  DatabaseCleaner[:mongoid].strategy = :truncation
-  Before { DatabaseCleaner.clean }
-rescue NameError
-  raise "You need to add database_cleaner to your Gemfile (in the :test group) if you wish to use it."
-end
-
 # You may also want to configure DatabaseCleaner to use different strategies for certain features and scenarios.
 # See the DatabaseCleaner documentation for details. Example:
 #
